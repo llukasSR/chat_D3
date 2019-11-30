@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>detail</ion-title>
+  </ion-toolbar>
+</ion-header>
+    <ion-content padding>
+        <ion-card *ngFor="let usuario of usuarios"(click)="onItemClick(usuarios)">
+                  <ion-item>
+                  <ion-label fixed>Chat</ion-label>
+                  <ion-input type="text" value=""></ion-input>
+                  </ion-item>
+                  <ion-item>
+                  <ion-textarea placeholder="Digite sua mensagem aqui"></ion-textarea>
+                  </ion-item>
+                  
+              <ion-buttons end>
+                  <button>
+                  OK
+                  </button>
+              </ion-buttons>
+        </ion-card>
+        </ion-content>
+</ion-content>

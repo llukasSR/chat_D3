@@ -1,14 +1,25 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Ionic Blank
+      Chat D3
     </ion-title>
-  </ion-toolbar>
+  </ion-toolbar>  
 </ion-header>
 
-<ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
-  </div>
+<ion-content padding>
+<ion-card *ngFor="let usuario of usuarios"(click)="onItemClick(usuarios)">
+          <ion-item>
+          <ion-label fixed>Digite um nome de usuário</ion-label>
+          <ion-input type="text" value=""></ion-input>
+          </ion-item>
+          <ion-item>
+          <ion-textarea placeholder=""></ion-textarea>
+          </ion-item>
+          
+      <ion-buttons end>
+          <button>
+          OK
+          </button>
+      </ion-buttons>
+</ion-card>
 </ion-content>
